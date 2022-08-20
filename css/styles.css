@@ -871,30 +871,16 @@ font-family: 'Raleway';
     color: var(--secondary-text);
 }
 
-.form-checkbox {
-appearance: none;
-    width: 16px;
-    height: 15px;
-    margin-right: 9px;
-    padding: 0;
-    border: 0;
-    
+.form-checkbox:checked + .the-checkbox > .icon-uncheck{
+    opacity: 0;
 }
 
-.form-checkbox::before {
-    content: '';
-    position: absolute;
-    width: 16px;
-    height: 15px;
-    border: 2px solid #212121;
-    border-radius: 2px;
+.form-checkbox:checked+.the-checkbox>.icon-checked {
+    opacity: 1;
 }
 
-.form-checkbox:checked {
-    background-color: var(--accent-text);
-    background-image: url(../images/symbol-defs.svg#icon-icon-check);
-    background-size: contain;
-    background-origin: content-box;
+.the-checkbox {
+    opacity: 0;
 }
 
 .icon-chek {
