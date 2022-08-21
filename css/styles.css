@@ -871,23 +871,26 @@ font-family: 'Raleway';
     color: var(--secondary-text);
 }
 
-.form-checkbox:checked + .the-checkbox > .icon-uncheck{
-    opacity: 0;
-}
-
-.form-checkbox:checked+.the-checkbox>.icon-checked {
-    opacity: 1;
+.form-checkbox {
+    appearance: none;
+    margin-left: 12px;
 }
 
 .the-checkbox {
+    position: absolute;
+    margin-left: 12px;
+}
+
+.form-checkbox:checked + .the-checkbox > .icon-uncheck {
+    opacity: 1;
+}
+
+.form-checkbox:checked+.the-checkbox >.icon-checked {
     opacity: 0;
 }
 
-.icon-chek {
-    display: inline-block;
-    border: 2px solid #212121;
-    border-radius: 2px;
-    margin-right: 7px;
+.checkbox-text {
+    margin-left: 25px;
 }
 
 .policy-link {
